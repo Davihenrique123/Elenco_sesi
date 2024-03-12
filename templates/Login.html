@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Login</title>
+</head>
+<body>
+    <form action="/login" method="post">
+        <img src="/static/imagens/Logo_SESI_vermelho.jpg">
+        <h4>QUEM SABE SABE</h4>
+        <p><input id="texto" type="text" name="nm" placeholder="Código_Mukifo"></p> 
+        <p><input id="button" type="submit" value="Adentrar"></p>
+        <a href="/fail">Crie sua conta</a>
+    </form>
+</body>
+</html>
