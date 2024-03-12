@@ -12,14 +12,14 @@ def login():
     if request.method == 'POST':
         codigo = request.form['nm']
         if codigo in Codes:
-            return redirect(url_for('Sesi'))
+            return redirect(url_for('FLKSDBFISADBFKLSADFIASDLFKJSBDIFYGSELFJVASDLFSELJFVSALIYFVESLKAFHBSAYIFVSLEKFJH'))
         else:
             return redirect(url_for('fail'))
     else:
         return render_template('Login.html')
     
-@app.route('/Sesi')
-def Sesi():
+@app.route('/FLKSDBFISADBFKLSADFIASDLFKJSBDIFYGSELFJVASDLFSELJFVSALIYFVESLKAFHBSAYIFVSLEKFJH')
+def FLKSDBFISADBFKLSADFIASDLFKJSBDIFYGSELFJVASDLFSELJFVSALIYFVESLKAFHBSAYIFVSLEKFJH():
     return render_template('Sesi.html')
 
 @app.route('/fail')
